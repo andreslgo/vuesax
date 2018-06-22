@@ -30,6 +30,11 @@ API:
    parameters: null
    description: Determines the alert icon
    default: null
+ - name: vs-icon-pack
+   type: String
+   parameters: Icon Pack
+   description: Icon Pack Description. If not use, vs-icon will base in Material Icons.
+   default: null
 ---
 
 # Alert
@@ -204,6 +209,9 @@ You can add to the alert a descriptive icon with the property `vs-icon` and as a
 
 ::: tip
 Vuesax use the **Google Material Icons** font library. For a list of all available icons, visit the official [Material Icons page](https://material.io/icons/).
+
+FontAwesome and other fonts library are supported. Simply use the ` vs-icon-pack` with `fa` or `fas`. You still need to include the Font Awesome icons in your project.
+
 :::
 
 <vuecode md>
@@ -217,6 +225,9 @@ Vuesax use the **Google Material Icons** font library. For a list of all availab
   <div class="centerx">
     <selected-icons :vs-icon.sync="icon1"/>
    <vs-alert vs-active="true" vs-color="rgb(111, 38, 224)" :vs-icon="icon1" >
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+   </vs-alert>
+   <vs-alert vs-active="true" vs-color="rgb(111, 38, 224)" vs-icon-pack="far" vs-icon="fa-address-card" >
      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
    </vs-alert>
   </div>

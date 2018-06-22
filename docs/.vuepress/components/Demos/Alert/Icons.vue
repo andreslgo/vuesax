@@ -4,6 +4,9 @@
    <vs-alert vs-active="true" vs-color="rgb(111, 38, 224)" :vs-icon="icon1" >
      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
    </vs-alert>
+   <vs-alert vs-active="true" vs-color="rgb(111, 38, 224)" vs-icon-pack="far" vs-icon="fa-address-card" >
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+   </vs-alert>
   </div>
 </template>
 
