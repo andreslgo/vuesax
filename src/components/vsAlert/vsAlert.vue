@@ -15,7 +15,8 @@
     v-if="vsActive"
     class="con-vs-alert">
 
-    <i v-if="vsIcon" class="material-icons icon-alert">{{vsIcon}}</i>
+    <i v-if="vsIcon && vsIconPack == null" class="material-icons icon-alert">{{vsIcon}}</i>
+    <i v-if="vsIcon && vsIconPack" :class="[vsIconPack, vsIcon, 'icon-alert']"></i>
 
     <div
       @click="$emit('update:vsActive',false)"
@@ -66,6 +67,10 @@ export default {
     vsIcon:{
       type:String,
       default:null,
+    },
+    vsIconPack:{
+      type: String,
+      default: null
     }
   },
 }
